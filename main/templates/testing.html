@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="code">
+        <ul>
+          <li><a href="#.">Input Image</a></li>
+          <li><a href="#.">Output Location</a></li>
+        </ul>
+      </div><div class="clear"></div>
+</div>
+<div class="container">
+
+  <div class="coding">
+    
+    <form action="" method="post" enctype="multipart/form-data">
+
+      <textarea rows="20" cols="50" name="pythonCode" style="background-image:url(static/images/original.jpg);background-repeat: no-repeat;"></textarea>
+      <textarea rows="20" cols="50" name="result">{{ txt }}</textarea>
+      <br><input type="file" name="photo" accept="image/*"/>
+      <input type="submit" value="Find Location"/> <br><br>
+      
+      
+    </form>
+  </div>
+  </div>
+
+  {% endblock %}
